@@ -15,7 +15,7 @@ apiData()
 
 // ---------------- FUNCTIONS ----------------------------
 function apiData (){
-    fetch("https://amazing-events.herokuapp.com/api/events").then(api => api.json()).then(data => {
+    fetch("https://amazing-events-d7382-default-rtdb.firebaseio.com/api.json").then(api => api.json()).then(data => {
         let events = data.events
         let date = data.currentDate
         
